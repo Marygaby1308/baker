@@ -1,0 +1,39 @@
+.work__wrapper {
+	@media (max-width:768px) {
+		width: 100%;
+	}
+
+	width: 700px;
+	margin: auto;
+
+	img {
+		width: 100%;
+	}
+
+}
+
+.work .text-image__text {
+	@include flex-direction(column);
+}
+
+.work .text-image__text {
+	flex-basis: 100%;
+}
+
+.work .dog__wrapper {
+	@media (max-width:768px) {
+		@include flex-direction(column);
+		@include align-items(left);
+	}
+
+	@include flexbox;
+	@include justify-content(space-between);
+
+	img{
+	@media (max-width:768px) {
+		width: 100%;
+	}
+		width: 300px;
+		height: 200px;
+	}
+}
